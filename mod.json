@@ -1,0 +1,17 @@
+
+{
+    "_QPVersion": "0.1.0",
+    "name": "MP3 Player Mod",
+    "id": "MP3Player",
+    "author": "Christoffyw",
+    "version": "0.1.0",
+    "packageId": "com.AnotherAxiom.GorillaTag",
+    "packageVersion": "1.14.0",
+    "type": "Gameplay",
+    "modFiles": [
+        "libMP3Player.so"
+    ],
+    "libraryFiles": [
+        "libbeatsaber-hook_1_3_5.so"
+    ]
+}
