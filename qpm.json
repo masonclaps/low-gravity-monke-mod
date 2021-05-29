@@ -22,11 +22,6 @@
       "id": "monkecodegen",
       "versionRange": "*",
       "additionalData": {}
-    },
-    {
-      "id": "quest-cosmetic-loader",
-      "versionRange": "*",
-      "additionalData": {}
     }
   ],
   "additionalData": {}
