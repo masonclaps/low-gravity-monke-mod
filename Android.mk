@@ -36,7 +36,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := monkecodegen_0_4_0
 LOCAL_EXPORT_C_INCLUDES := extern/monkecodegen
 LOCAL_SRC_FILES := extern/libmonkecodegen_0_4_0.so
-include $(PREBUILT_SHARED_LIBRARY
+include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := LowGravityMonke
