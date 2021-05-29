@@ -37,17 +37,31 @@ LOCAL_MODULE := monkecodegen_0_4_0
 LOCAL_EXPORT_C_INCLUDES := extern/monkecodegen
 LOCAL_SRC_FILES := extern/libmonkecodegen_0_4_0.so
 include $(PREBUILT_SHARED_LIBRARY)
+# Creating prebuilt for dependency: quest-cosmetic-loader - version: 0.1.3
+include $(CLEAR_VARS)
+LOCAL_MODULE := quest-cosmetic-loader_0_1_3
+LOCAL_EXPORT_C_INCLUDES := extern/quest-cosmetic-loader
+LOCAL_SRC_FILES := extern/libquest-cosmetic-loader_0_1_3.so
+include $(PREBUILT_SHARED_LIBRARY)
+# Creating prebuilt for dependency: zip - version: 1.7.4
+include $(CLEAR_VARS)
+LOCAL_MODULE := zip
+LOCAL_EXPORT_C_INCLUDES := extern/zip
+LOCAL_SRC_FILES := extern/libzip.so
+include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := MP3Player
+LOCAL_MODULE := LowGravityMonke
 LOCAL_SRC_FILES += $(call rwildcard,src/,*.cpp)
 LOCAL_SRC_FILES += $(call rwildcard,extern/beatsaber-hook/src/inline-hook,*.cpp)
 LOCAL_SRC_FILES += $(call rwildcard,extern/beatsaber-hook/src/inline-hook,*.c)
 LOCAL_SHARED_LIBRARIES += modloader
 LOCAL_SHARED_LIBRARIES += beatsaber-hook_1_3_5
 LOCAL_SHARED_LIBRARIES += monkecodegen_0_4_0
+LOCAL_SHARED_LIBRARIES += quest-cosmetic-loader_0_1_3
+LOCAL_SHARED_LIBRARIES += zip
 LOCAL_LDLIBS += -llog
-LOCAL_CFLAGS += -I'extern/libil2cpp/il2cpp/libil2cpp' -DID='"MP3Player"' -DVERSION='"0.1.0"' -I'./shared' -I'./extern' -isystem'extern/monkecodegen/include'
+LOCAL_CFLAGS += -I'extern/libil2cpp/il2cpp/libil2cpp' -DID='"LowGravityMonke"' -DVERSION='"0.1.0"' -I'./shared' -I'./extern' -isystem'extern/monkecodegen/include'
 LOCAL_CPPFLAGS += -std=c++2a
 LOCAL_C_INCLUDES += ./include ./src
 include $(BUILD_SHARED_LIBRARY)

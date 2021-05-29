@@ -2,8 +2,8 @@
   "sharedDir": "shared",
   "dependenciesDir": "extern",
   "info": {
-    "name": MP3 Player Mod",
-    "id": MP3Player
+    "name": "Low Gravity Monke Mod",
+    "id": "LowGravityMonke",
     "version": "0.1.0",
     "url": null,
     "additionalData": {}
@@ -20,6 +20,11 @@
     },
     {
       "id": "monkecodegen",
+      "versionRange": "*",
+      "additionalData": {}
+    },
+    {
+      "id": "quest-cosmetic-loader",
       "versionRange": "*",
       "additionalData": {}
     }
