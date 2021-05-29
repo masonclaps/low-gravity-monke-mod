@@ -36,7 +36,7 @@ Logger& getLogger() {
     return *logger;
 }
 
-float gravityScale = 0.5;
+float gravityScale;
 float globalGravity = -9.81;
 bool allowLowGravity = false;
 
